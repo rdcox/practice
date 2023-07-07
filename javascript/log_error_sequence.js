@@ -67,6 +67,7 @@ function getUniqueUsers(logs) {
 }
 
 // Revised Solution
+// only traverse the log list once, and be smarter about tracking sequences
 function getErrorUsersV2(logs, sequence = ["A", "B", "C"]) {
     // create a map to track users
     const userSeqMap = new Map();
